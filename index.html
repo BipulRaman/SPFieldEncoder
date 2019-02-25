@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Converter">
+    <meta name="author" content="Bipul Raman">
+    <title>SPField Encoder</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script type="text/javascript" src="./app.js"></script>
+    <style>
+        .container {margin-top: 75px;}
+    </style>
+</head>
+
+<body>
+    <div
+        class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm fixed-top">
+        <h5 class="my-0 mr-md-auto font-weight-normal">SPField Encoder</h5>
+    </div>
+    <div class="container">
+        <form id="convert">
+            <div class="card">
+                <div class="card-header">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="convertType" id="radioEncode" value="Encode"
+                            checked>
+                        <label class="form-check-label" for="radioEncode">Encode</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="convertType" id="radioEncode" value="Decode">
+                        <label class="form-check-label" for="radioDecode">Decode</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <button type="button" class="btn btn-outline-primary btn-sm"
+                            onclick="Convert()">Get Output</button>
+                    </div>
+                    <div class="btn-group float-right" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-outline-secondary btn-sm"
+                            onclick="CopyOutput()">Copy&nbsp;Output</button>
+                        <button type="button" class="btn btn-outline-secondary btn-sm"
+                            onclick="ClearForm()">Clear&nbsp;All</button>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-sm">
+                            <label for="txtInput">Input:</label>
+                            <textarea class="form-control" id="txtInput" rows="5"></textarea>
+                        </div>
+                        <div class="col-sm">
+                            <label for="txtOutput">Output:</label>
+                            <textarea class="form-control" id="txtOutput" rows="5"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
