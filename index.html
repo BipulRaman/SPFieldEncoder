@@ -10,7 +10,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <script type="text/javascript" src="./app.js"></script>
     <style>
-        .container {margin-top: 75px;}
+        .container {
+            margin-top: 75px;
+        }
     </style>
 </head>
 
@@ -19,10 +21,11 @@
         class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm fixed-top">
         <h5 class="my-0 mr-md-auto font-weight-normal">SPField Encoder</h5>
     </div>
-    <div class="alert alert-primary" role="alert">
-        A web-based utility to encode or decode SharePoint field name.
-      </div>
+
     <div class="container">
+        <div class="alert alert-info" role="alert">
+            A web-based utility to encode or decode SharePoint field name.
+        </div>
         <form id="convert">
             <div class="card">
                 <div class="card-header">
@@ -36,8 +39,8 @@
                         <label class="form-check-label" for="radioDecode">Decode</label>
                     </div>
                     <div class="form-check form-check-inline">
-                        <button type="button" class="btn btn-outline-primary btn-sm"
-                            onclick="Convert()">Get Output</button>
+                        <button type="button" class="btn btn-outline-primary btn-sm" onclick="Convert()">Get
+                            Output</button>
                     </div>
                     <div class="btn-group float-right" role="group" aria-label="Basic example">
                         <button type="button" class="btn btn-outline-secondary btn-sm"
