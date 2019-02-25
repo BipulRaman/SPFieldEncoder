@@ -2,7 +2,7 @@
 
 A web-based utility to encode or decode SharePoint field name.
 
-Link: https://spencode.bipul.in
+Link: https://spencoder.bipul.in
 
 # License
 All files within this repo are released under the [MIT (OSI) License]( https://en.wikipedia.org/wiki/MIT_License) as per the [LICENSE file](https://github.com/JNVSAlumni/JNVSAlumni.github.io/blob/master/LICENSE) stored in the root of this repo. 
