@@ -23,7 +23,8 @@ function SPEncode(toEncode) {
     var encodedString = "";
 
     for (i = 0; i < charToEncode.length; i++) {
-        encodedChar = escape(charToEncode[i]).toLowerCase();
+        //encodedChar = escape(charToEncode[i]).toLowerCase();
+        encodedChar = escape(charToEncode[i]);
 
         if (encodedChar.length == 3) {
             encodedString += encodedChar.replace("%", "_x00") + "_";
