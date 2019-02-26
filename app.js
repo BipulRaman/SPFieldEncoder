@@ -32,9 +32,12 @@ function SPEncode(toEncode) {
         else if (encodedChar.length == 5) {
             encodedString += encodedChar.replace("%u", "_x") + "_";
         }
+        else if (encodedChar == "-") {
+            encodedString += encodedChar.replace("-", "_x002d") + "_";
+        }
         else {
             encodedString += encodedChar;
-        }
+        }        
     }
     return encodedString;
 }
@@ -42,6 +45,5 @@ function SPEncode(toEncode) {
 // Decode
 function SPDecode(toDecode) {
     var decodedString = toDecode.replace("_x", "%u").replace("_", "");
-
     return unescape(decodedString);
 }
