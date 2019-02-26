@@ -44,6 +44,7 @@ function SPEncode(toEncode) {
 
 // Decode
 function SPDecode(toDecode) {
-    var decodedString = toDecode.replace("_x", "%u").replace("_", "");
+    var decodedString = toDecode.replace("_x", "%u").replace("__", "_");
+    console.log(decodedString);
     return unescape(decodedString);
 }
